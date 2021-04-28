@@ -1,7 +1,9 @@
 <?php
 
+
 use App\Http\Controllers\MoviesController;
 use Illuminate\Support\Facades\Route;
+
 
 route::get('/', [MoviesController::class, 'index'])->name('movies.index');
 route::get('/movie/{id}', [MoviesController::class, 'show'])->name('movies.show');
@@ -20,3 +22,11 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+Route::get('/admin', function () {
+    return view('admin.dashboard');
+});
+
+Route::get('/admin/login', function () {
+    return view('admin.login');
+});
