@@ -79,7 +79,12 @@ module.exports = {
                 sans: ['Inter', ...defaultTheme.fontFamily.sans],
             },
             width: {
-                '96' : '24rem'
+                '96' : '24rem',
+                '1/7': '14.2857143%',
+                '1/8': '12.5%',
+                '1/9': '11.1111111%',
+                '1/10': '10%',
+
             },
             maxHeight: {
                 '0': '0',

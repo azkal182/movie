@@ -23,5 +23,8 @@
         "tailwindcss": "^2.0.2",
         "tailwindcss-multi-theme": "^1.0.4",
         "tailwindcss-spinner": "^1.2.0"
+    },
+    "dependencies": {
+        "yarn": "^1.22.10"
     }
 }
