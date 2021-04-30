@@ -25,13 +25,14 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/admin/dashboard', function () {
+Route::get('/admin', function () {
     return view('admin.dashboard');
 })->name('admin.dashboard');
 
 Route::get('/card', function () {
     return view('card');
 });
+
 
 Route::get('/admin/login', function () {
     return view('admin.login');
