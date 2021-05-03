@@ -34,4 +34,4 @@ jobs:
         username: azkal7172
         host: azkal.tech
         password: ${{ secrets.SSH_PASSWORD }}
-        script: 'cd laravel && chmod -R 777 * && ./server_deploy.sh'
+        script: 'cd movie && chmod -R 777 * && ./server_deploy.sh'
