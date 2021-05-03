@@ -14,7 +14,6 @@ jobs:
     - uses: borales/actions-yarn@v2.0.0
       with:
         cmd: install
-        cmd: production
           #    - name: Set up Node
           #      uses: actions/setup-node@v1
           #      with:
