@@ -10,16 +10,16 @@ jobs:
     - uses: actions/checkout@v2                                  
       with:
         token: ${{ secrets.PUSH_TOKEN }}
-    - name: setup yarn
-      uses: borales/actions-yarn@v2.0.0
-      with:
-        cmd: install
-          #    - name: Set up Node
-          #      uses: actions/setup-node@v1
+          #    - name: setup yarn
+          #     uses: borales/actions-yarn@v2.0.0
           #     with:
-          #        node-version: '14.x'
-          #    - run: npm install
-          #    - run: npm run production
+          #      cmd: install
+    - name: Set up Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '14.x'
+    - run: npm install
+    - run: npm run production
     - name: Commit built assetsf                                 
       run: |
         git config --local user.email "mohazkalarif@gmail.com"                                                                
