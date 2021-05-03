@@ -10,7 +10,12 @@ jobs:
     - uses: actions/checkout@v2                                  
       with:
         token: ${{ secrets.PUSH_TOKEN }}
-    - name: set up yarn
+    - name: Set up Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '14.x'
+    - run: npm install
+    - run: npm run production
     - name: Commit built assetsf                                 
       run: |
         git config --local user.email "mohazkalarif@gmail.com"                                                                
