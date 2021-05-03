@@ -11,9 +11,6 @@ jobs:
       with:
         token: ${{ secrets.PUSH_TOKEN }}
     - name: set up yarn
-    - uses: borales/actions-yarn@v2.0.0
-      with:
-        cmd: install
     - name: Commit built assetsf                                 
       run: |
         git config --local user.email "mohazkalarif@gmail.com"                                                                
