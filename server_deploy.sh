@@ -18,6 +18,8 @@ echo "Deploying application ..."
 
     # Clear cache
     php artisan optimize
+    
+    php artisan config:cache
 
     # Reload PHP to update opcache
     # echo "" | sudo -S service php7.4-fpm reload
