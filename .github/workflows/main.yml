@@ -31,7 +31,7 @@ jobs:
     - name: Deploy to production
       uses: appleboy/ssh-action@master                           
       with:                                                        
-        username: azkal7172
+        username: azkal1206
         host: azkal.tech
         password: ${{ secrets.SSH_PASSWORD }}
         script: 'cd movie && chmod -R 777 * && ./server_deploy.sh'
